@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>WebConsole</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/iconfonts/ionicons/dist/css/ionicons.css">
+    <link rel="stylesheet" href="assets/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.addons.css">
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="assets/css/shared/style.css">
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/demo_1/style.css">
+    <!-- End Layout styles -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+</head>
+
+<body>
+    <div class="container-scroller">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
+                <a class="navbar-brand brand-logo" href="index.html">
+                    SHIELDEX Net</a>
+                <a class="navbar-brand brand-logo-mini" href="index.html">
+                    SD</a>
+            </div>
+
+            <div class="navbar-menu-wrapper d-flex align-items-center">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item d-xl-inline-block ">
+                        <a class="nav-link" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                            <img class="img-xs rounded-circle" src="assets/images/faces/face8.jpg" alt="Profile image"> </a>
+                    </li>
+                    <li class="nav-item d-xl-inline-block ">
+                        <a class="dropdown-item">Sign Out<i class="ti-power-off"></i></a>
+
+                    </li>
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+                    <span class="mdi mdi-menu"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:partials/_sidebar.html -->
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                    <li class="nav-item nav-profile">
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="menu-icon typcn typcn-document-text"></i>
+                            <span class="menu-title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="filecdr.html">
+                            <i class="menu-icon typcn typcn-shopping-bag"></i>
+                            <span class="menu-title">검색센터</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                            <i class="menu-icon typcn typcn-coffee"></i>
+                            <span class="menu-title">정책</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="ui-basic">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="policy.html">기본정책</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/ui-features/typography.html">Typography</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="filePolicy.html">
+                            <i class="menu-icon typcn typcn-th-large-outline"></i>
+                            <span class="menu-title">파일 정책 리스트</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#Report" aria-expanded="false" aria-controls="Report">
+                            <i class="menu-icon typcn typcn-coffee"></i>
+                            <span class="menu-title">리포트</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="Report">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cdr_report.html">무해화 Report</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="risk_type_report.html">위험요소 Report</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="prevent_report.html">사전예방지수 Report</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="server.html">
+                            <i class="menu-icon typcn typcn-bell"></i>
+                            <span class="menu-title">서버상태</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#admin" aria-expanded="false" aria-controls="admin">
+                            <i class="menu-icon typcn typcn-coffee"></i>
+                            <span class="menu-title">관리자</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="admin">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="admin_setting.html">관리자 등록 / 관리</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="risk_type_report.html">관리자 감사 로그</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">
+                            <i class="menu-icon typcn typcn-user-outline"></i>
+                            <span class="menu-title">제품정보</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="file_setting.html">
+                            <i class="menu-icon typcn typcn-user-outline"></i>
+                            <span class="menu-title">설정파일 수정</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- partial -->
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <!-- Page Title Header Starts-->
+                    <div class="row page-title-header">
+                        <div class="col-12">
+                            <div class="page-header">
+                                <h4 class="page-title">파일 CDR 검색센터</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="page-header-toolbar">
+                                <div class="filter-wrapper">
+                                    <div class="dropdown toolbar-item">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownsorting" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Day</button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownsorting">
+                                            <a class="dropdown-item" href="#">Last Day</a>
+                                            <a class="dropdown-item" href="#">Last Month</a>
+                                            <a class="dropdown-item" href="#">Last Year</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col"> <input type="text" class="form-control"></div>
+                                <div class="btn-group toolbar-item" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-secondary"><i class="mdi mdi-chevron-left"></i></button>
+                                    <button type="button" class="btn btn-secondary">03/02/2019 - 20/08/2019</button>
+                                    <button type="button" class="btn btn-secondary"><i class="mdi mdi-chevron-right"></i></button>
+                                </div>
+                                <div class="sort-wrapper">
+                                    <div class="dropdown ml-lg-auto ml-3 toolbar-item">
+                                        <button class="btn btn-success dropdown-toggle" type="button" id="dropdownexport" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Export</button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownexport">
+                                            <a class="dropdown-item" href="#">Export as PDF</a>
+                                            <a class="dropdown-item" href="#">Export as DOCX</a>
+                                            <a class="dropdown-item" href="#">Export as CDR</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Page Title Header Ends-->
+                    <div class="row grid-margin">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th> 요청시간 </th>
+                                                <th> 파일명 </th>
+                                                <th> 사용자명 </th>
+                                                <th>무해화결과</th>
+                                                <th> CDR 처리시간 </th>
+                                                <th> 다운로드 </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> 2020-09-23 14:58:49.294 </td>
+                                                <td> <a href="">샘플.docx</a></td>
+                                                <td>12
+                                                </td>
+                                                <td> <a href="" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#exampleModal">파일전송 <i class="mdi mdi-play-circle ml-1"></i>
+                                                    </a></td>
+                                                <td> 2 s </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary">원본파일</button>
+                                                    <button type="button" class="btn btn-outline-primary">CDR파일</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 2020-09-23 14:58:49.294 </td>
+                                                <td> <a href="">샘플.docx</a></td>
+                                                <td>12
+                                                </td>
+                                                <td> <a href="" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#exampleModal">파일전송 <i class="mdi mdi-play-circle ml-1"></i>
+                                                    </a></td>
+                                                <td> 2 s </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary">원본파일</button>
+                                                    <button type="button" class="btn btn-outline-primary">CDR파일</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 2020-09-23 14:58:49.294 </td>
+                                                <td> <a href="">샘플.docx</a></td>
+                                                <td>12
+                                                </td>
+                                                <td> <a href="" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#exampleModal">파일전송 <i class="mdi mdi-play-circle ml-1"></i>
+                                                    </a></td>
+                                                <td> 2 s </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary">원본파일</button>
+                                                    <button type="button" class="btn btn-outline-primary">CDR파일</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 2020-09-23 14:58:49.294 </td>
+                                                <td> <a href="">샘플.docx</a></td>
+                                                <td>12
+                                                </td>
+                                                <td> <a href="" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#exampleModal">파일전송 <i class="mdi mdi-play-circle ml-1"></i>
+                                                    </a></td>
+                                                <td> 2 s </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary">원본파일</button>
+                                                    <button type="button" class="btn btn-outline-primary">CDR파일</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 2020-09-23 14:58:49.294 </td>
+                                                <td> <a href="">샘플.docx</a></td>
+                                                <td>12
+                                                </td>
+                                                <td> <a href="" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#exampleModal">파일전송 <i class="mdi mdi-play-circle ml-1"></i>
+                                                    </a></td>
+                                                <td> 2 s </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary">원본파일</button>
+                                                    <button type="button" class="btn btn-outline-primary">CDR파일</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 2020-09-23 14:58:49.294 </td>
+                                                <td> <a href="">샘플.docx</a></td>
+                                                <td>12
+                                                </td>
+                                                <td> <a href="" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#exampleModal">파일전송 <i class="mdi mdi-play-circle ml-1"></i>
+                                                    </a></td>
+                                                <td> 2 s </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary">원본파일</button>
+                                                    <button type="button" class="btn btn-outline-primary">CDR파일</button>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+                        <div class="modal-dialog " role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Modal body text goes here.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success">Submit</button>
+                                    <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content-wrapper ends -->
+                <!-- partial:partials/_footer.html -->
+                <footer class="footer">
+                    <div class="container-fluid clearfix">
+                        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2020<a href="http://www.softcamp.co.kr" target="_blank">Softcamp</a>. All rights reserved.</span>
+                    </div>
+                </footer>
+                <!-- partial -->
+            </div>
+            <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="assets/vendors/js/vendor.bundle.addons.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="assets/js/shared/off-canvas.js"></script>
+    <script src="assets/js/shared/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="assets/js/demo_1/dashboard.js"></script>
+    <!-- End custom js for this page-->
+</body>
+
+</html>
