@@ -40,7 +40,7 @@ $(function() {
     barRatio: 0.4,
     xLabelAngle: 35,
     hideHover: 'auto',
-    barColors: ['#ff4a00'],
+    barColors: ['#1b3f7c'],
     gridLineColor: gridBorder,
     resize: true
   });
@@ -63,7 +63,7 @@ $(function() {
     ykeys: ['iphone', 'ipad', 'itouch'],
     labels: ['iPhone', 'iPad', 'iPod Touch'],
     hideHover: 'auto',
-    lineColors: ['#ff4a00', '#FF4961', '#62d493'],
+    lineColors: ['#1b3f7c', '#FF4961', '#62d493'],
     fillOpacity: 0.1,
     behaveLikeLine: true,
     lineWidth: 1,
@@ -80,7 +80,7 @@ $(function() {
       { label: 'Custard', value: 25 },
       { label: 'Sugar',   value: 10 }
     ],
-    colors: ['#ff4a00', '#FF4961', '#62d493', '#f4ab55'],
+    colors: ['#1b3f7c', '#FF4961', '#62d493', '#f4ab55'],
     resize: true,
     labelColor: '#888',
     formatter: function (y) { return y + "%" }

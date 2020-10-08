@@ -2515,7 +2515,7 @@ pre code {
     font-weight: 400;
     line-height: 1.5;
     color: #495057;
-    background-color: #fff;
+    background-color: #ffffffa6;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .2rem;
@@ -4832,7 +4832,7 @@ input[type=submit].btn-block {
 
 .navbar {
     position: relative;
-    padding: .875rem 1.375rem
+    padding: .42rem 1.375rem
 }
 
 .navbar,
@@ -5564,7 +5564,8 @@ input[type=submit].btn-block {
 }
 
 .breadcrumb-item.active {
-    color: #6c757d
+    color: #6c757d;
+    font-weight: 700;
 }
 
 .pagination {
@@ -12883,8 +12884,8 @@ a.text-dark:hover {
 }
 
 .avatar {
-    width: 40px;
-    height: 40px
+    width: 30px;
+    height: 30px
 }
 
 .avatar-title {
@@ -13598,11 +13599,12 @@ a.text-dark:hover {
 
 .card {
     margin-bottom: 24px;
-    /*box-shadow: 0 0 .875rem 0 rgba(33, 37, 41, .05)*/
+    box-shadow: 0 0 .875rem 0 rgba(33, 37, 41, .03);
 }
 
 .card-header {
-    border-bottom-width: 1px
+    border-bottom-width: 1px;
+    border-color: #eee;
 }
 
 .card-actions a {
@@ -14244,7 +14246,7 @@ screen and (-ms-high-contrast:active) {
 .sidebar,
 .sidebar-content {
     transition: margin-left .35s ease-in-out, left .35s ease-in-out, margin-right .35s ease-in-out, right .35s ease-in-out;
-    background: #222e3c
+    background: #384253
 }
 
 .sidebar-content {
@@ -14257,20 +14259,21 @@ screen and (-ms-high-contrast:active) {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-    flex-grow: 1
+    flex-grow: 1;
+    padding-top: 2rem;
 }
 
 .sidebar-link,
 a.sidebar-link {
     display: block;
     padding: .625rem 1.625rem;
-    font-weight: 400;
+    font-weight: 500;
     transition: background .1s ease-in-out;
     position: relative;
     text-decoration: none;
     cursor: pointer;
-    color: rgba(233, 236, 239, .5);
-    background: #222e3c;
+    color: rgba(255, 255, 255, .5);
+    background: #384253;
     border-left: 3px solid transparent
 }
 
@@ -14299,9 +14302,9 @@ a.sidebar-link svg {
 
 .sidebar-item.active .sidebar-link:hover,
 .sidebar-item.active > .sidebar-link {
-    color: #e9ecef;
-    background: linear-gradient(90deg, rgba(59, 125, 221, .1), rgba(59, 125, 221, .0875) 50%, transparent);
-    border-left-color: #3b7ddd
+    color: #ffffff;
+    background: linear-gradient(90deg, rgba(59, 125, 221, .1), rgb(239 245 255 / 9%) 50%, #ffffff00);
+    border-left-color: #2c7df3;
 }
 
 .sidebar-item.active .sidebar-link:hover i,
@@ -14373,9 +14376,10 @@ a.sidebar-link svg {
 .sidebar-brand {
     font-weight: 600;
     font-size: 1.15rem;
-    padding: 1.15rem 1.5rem;
+    padding: 0.65rem 1.5rem;
     display: block;
-    color: #f8f9fa
+    color: #f8f9fa;
+    margin-left: 25px;
 }
 
 .sidebar-brand:hover {
@@ -21434,9 +21438,17 @@ svg {
     border: 1px solid transparent;
     border-top-left-radius: .2rem;
     border-top-right-radius: .2rem;
-    background: #1e82bd;
+    background: linear-gradient(to bottom, #204e7c 1%, #41719b 4%, #1d4670 9%, #23538a 100%);
     color: #fff;
     margin-right: 1px;
+    padding: .5rem 1.8rem;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #495057;
+    background: linear-gradient(to bottom, #ffffff 0%, #f3f3f3 9%, #ededed 100%, #ededed 101%);
+    border-color: #dee2e6 #dee2e6 #f7f7fc;
 }
 
 /*login*/
@@ -21450,4 +21462,8 @@ svg {
 .intro .shape {
     margin-top: -9vw;
     position: absolute;
+}
+
+.bg_gray {
+    background: #e3e7ec;
 }
