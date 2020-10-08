@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+
+<html lang="ko" class="material-style layout-fixed">
+
+<head>
+    <title>WebConsole</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/sd.png">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+    <!-- Icon fonts -->
+    <link rel="stylesheet" href="assets/fonts/fontawesome.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.css">
+    <link rel="stylesheet" href="assets/fonts/linearicons.css">
+    <link rel="stylesheet" href="assets/fonts/open-iconic.css">
+    <link rel="stylesheet" href="assets/fonts/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="assets/fonts/feather.css">
+
+    <!-- Core stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap-material.css">
+    <link rel="stylesheet" href="assets/css/shreerang-material.css">
+    <link rel="stylesheet" href="assets/css/uikit.css">
+
+    <!-- Libs -->
+    <link rel="stylesheet" href="assets/libs/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/libs/flot/flot.css">
+
+</head>
+
+<body>
+    <!-- [ Preloader ] Start -->
+    <div class="page-loader">
+        <div class="bg-primary"></div>
+    </div>
+    <!-- [ Preloader ] End -->
+
+    <!-- [ Layout wrapper ] Start -->
+    <div class="layout-wrapper layout-2">
+        <div class="layout-inner">
+            <!-- [ Layout sidenav ] Start -->
+            <div id="layout-sidenav" class="layout-sidenav sidenav sidenav-vertical bg-white logo-dark">
+                <!-- Brand demo (see assets/css/demo/demo.css) -->
+                <div class="app-brand demo">
+                    <span class="app-brand-logo ">
+                        <img src="assets/img/sd.png" style="width: 25px;" />
+                    </span>
+                    <a href="index.html" class="app-brand-text demo sidenav-text font-weight-normal ml-2">SHIELDEX Net</a>
+                    <a href="javascript:" class="layout-sidenav-toggle sidenav-link text-large ml-auto">
+                        <i class="ion ion-md-menu align-middle"></i>
+                    </a>
+                </div>
+                <div class="sidenav-divider mt-0"></div>
+
+                <!-- Links -->
+                <ul class="sidenav-inner py-1">
+
+                    <!-- Dashboards -->
+                    <li class="sidenav-item active">
+                        <a href="index.html" class="sidenav-link">
+                            <i class="sidenav-icon feather icon-home"></i>
+                            <div>Dashboards</div>
+                            <div class="pl-1 ml-auto">
+                                <div class="badge badge-primary">update</div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <!-- Layouts -->
+                    <li class="sidenav-item">
+                        <a href="filecdr.html" class="sidenav-link">
+                            <i class="sidenav-icon feather icon-search"></i>
+                            <div>검색센터</div>
+                        </a>
+                    </li>
+
+                    <!-- UI elements -->
+                    <li class="sidenav-item">
+                        <a href="javascript:" class="sidenav-link sidenav-toggle">
+                            <i class="sidenav-icon feather icon-book"></i>
+                            <div>정책</div>
+                        </a>
+                        <ul class="sidenav-menu">
+                            <li class="sidenav-item">
+                                <a href="policy.html" class="sidenav-link">
+                                    <div>기본정책</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidenav-item">
+                        <a href="typography.html" class="sidenav-link">
+                            <i class="sidenav-icon feather icon-clipboard"></i>
+                            <div>파일 정책 리스트</div>
+                        </a>
+                    </li>
+                    <!-- Forms & Tables -->
+                    <li class="sidenav-item">
+                        <a href="javascript:" class="sidenav-link sidenav-toggle">
+                            <i class="sidenav-icon feather icon-file-text"></i>
+                            <div>리포트</div>
+                        </a>
+                        <ul class="sidenav-menu">
+                            <li class="sidenav-item">
+                                <a href="forms_layouts.html" class="sidenav-link">
+                                    <div>CDR 리포트</div>
+                                </a>
+                            </li>
+                            <li class="sidenav-item">
+                                <a href="forms_input-groups.html" class="sidenav-link">
+                                    <div>위험요소 리포트</div>
+                                </a>
+                            </li>
+
+                            <li class="sidenav-item">
+                                <a href="forms_input-groups.html" class="sidenav-link">
+                                    <div>사전예방지수 리포트</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidenav-item">
+                        <a href="tables_bootstrap.html" class="sidenav-link">
+                            <i class="sidenav-icon feather icon-server"></i>
+                            <div>서버상태</div>
+                        </a>
+                    </li>
+
+                    <!--  Icons -->
+                    <li class="sidenav-item">
+                        <a href="javascript:" class="sidenav-link sidenav-toggle">
+                            <i class="sidenav-icon feather icon-user"></i>
+                            <div>관리자 설정</div>
+                        </a>
+                        <ul class="sidenav-menu">
+                            <li class="sidenav-item">
+                                <a href="icons_feather.html" class="sidenav-link">
+                                    <div>관리자 등록/관리</div>
+                                </a>
+                            </li>
+                            <li class="sidenav-item">
+                                <a href="icons_linearicons.html" class="sidenav-link">
+                                    <div>관리자 감사/로그</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Pages -->
+                    <li class="sidenav-item">
+                        <a href="pages_authentication_login-v1.html" class="sidenav-link">
+                            <i class="sidenav-icon feather icon-briefcase"></i>
+                            <div>제품정보</div>
+                        </a>
+                    </li>
+                    <li class="sidenav-item">
+                        <a href="pages_authentication_register-v1.html" class="sidenav-link">
+                            <i class="sidenav-icon feather icon-cpu"></i>
+                            <div>설정파일 수정</div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- [ Layout sidenav ] End -->
+            <!-- [ Layout container ] Start -->
+            <div class="layout-container">
+                <!-- [ Layout navbar ( Header ) ] Start -->
+                <nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center bg-dark container-p-x" id="layout-navbar">
+
+                    <!-- Brand demo (see assets/css/demo/demo.css) -->
+                    <a href="index.html" class="navbar-brand app-brand demo d-lg-none py-0 mr-4">
+                        <span class="app-brand-logo demo">
+                            <img src="assets/img/logo-dark.png" alt="Brand Logo" class="img-fluid">
+                        </span>
+                        <span class="app-brand-text demo font-weight-normal ml-2">SHIELDEX Net</span>
+                    </a>
+
+                    <!-- Sidenav toggle (see assets/css/demo/demo.css) -->
+                    <div class="layout-sidenav-toggle navbar-nav d-lg-none align-items-lg-center mr-auto">
+                        <a class="nav-item nav-link px-0 mr-lg-4" href="javascript:">
+                            <i class="ion ion-md-menu text-large align-middle"></i>
+                        </a>
+                    </div>
+
+
+
+                    <div class="navbar-collapse collapse" id="layout-navbar-collapse">
+                        <!-- Divider -->
+                        <hr class="d-lg-none w-100 my-2">
+
+                        <div class="navbar-nav align-items-lg-center ml-auto">
+                            <div class="demo-navbar-user nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                    <span class="d-inline-flex flex-lg-row-reverse align-items-center align-middle">
+                                        <img src="assets/img/avatars/1.png" alt class="d-block ui-w-30 rounded-circle">
+                                        <span class="px-1 mr-lg-2 ml-2 ml-lg-0">관리자</span>
+                                    </span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="javascript:" class="dropdown-item">
+                                        <i class="feather icon-user text-muted"></i> &nbsp; My profile</a>
+                                    <a href="javascript:" class="dropdown-item">
+                                        <i class="feather icon-power text-danger"></i> &nbsp; Log Out</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- [ Layout navbar ( Header ) ] End -->
+
+                <!-- [ Layout content ] Start -->
+                <div class="layout-content">
+
+                    <!-- [ content ] Start -->
+                    <div class="container-fluid flex-grow-1 container-p-y">
+                        <h4 class="font-weight-bold py-3 mb-0">Dashboard</h4>
+                        <hr class="border-light container-m--x my-0">
+                        <div class="row mt-4">
+                            <div class="col-md-12">
+                                <div class=" ui-bordered mb-4 p-2" style="background: #eaedf1">
+                                    <form class="form-inline">
+                                        <label class="form-label ml-2">기간설정</label>
+                                        <select class="custom-select mx-2 mb-sm-0" style="width: 120px">
+                                            <option selected="">Choose...</option>
+                                            <option value="1">1주일 </option>
+                                            <option value="2">한달</option>
+                                            <option value="3">기간 지정</option>
+                                        </select>
+                                        <input type="date" class="form-control mx-sm-3">
+                                        <button type="submit" class="btn btn-primary btn-sm  mr-2">조회</button>
+                                        <button type="submit" class="btn btn-outline-secondary btn-sm">Today</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- 1st row Start -->
+                            <div class="col-md-3">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="">
+                                                <h2 class="mb-2">1<small class="text-muted">건</small></h2>
+                                                <p class="text-muted mb-0"><span class="badge badge-success">안전</span>
+                                                </p>
+                                            </div>
+                                            <div class="lnr lnr-license  display-4 text-success"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="">
+                                                <h2 class="mb-2">1<small class="text-muted">건</small></h2>
+                                                <p class="text-muted mb-0"><span class="badge badge-info">경고</span></p>
+                                            </div>
+                                            <div class="feather icon-alert-triangle display-4 text-info"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="">
+                                                <h2 class="mb-2">0<small class="text-muted">건</small></h2>
+                                                <p class="text-muted mb-0"><span class="badge badge-warning">주의</span></p>
+                                            </div>
+                                            <div class="feather icon-alert-circle display-4 text-warning"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="">
+                                                <h2 class="mb-2"> 0 <small class="text-muted">건</small></h2>
+                                                <p class="text-muted mb-0"><span class="badge badge-danger">위험</span></p>
+                                            </div>
+                                            <div class="feather icon-x-circle display-4 text-danger "><span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card mb-4">
+                                    <div class="card-header with-elements">
+                                        <h5 class="card-header-title mb-0">무해화 처리 통계</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="chartdiv3" style="height:315px"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card mb-4">
+                                    <div class="card-header with-elements">
+                                        <h5 class="card-header-title mb-0">재구성 요소 통계</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="chartdiv2" class="mt-3" style="height:300px"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card mb-4">
+                                    <div class="card-header with-elements">
+                                        <h5 class="card-header-title mb-0">파일 유입 통계</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="chartdiv" style="height:315px"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 1st row Start -->
+                        </div>
+
+                    </div>
+                    <!-- [ content ] End -->
+
+                    <!-- [ Layout footer ] Start -->
+                    <nav class="layout-footer footer bg-white">
+                        <div class="container-fluid d-flex flex-wrap justify-content-between text-center container-p-x pb-3">
+                            <div class="pt-3">
+                                <span class="footer-text font-weight-semibold">&copy; <a href="#SHIELDEX Net" class="footer-link" target="_blank">SHIELDEX Net</a></span>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- [ Layout footer ] End -->
+                </div>
+                <!-- [ Layout content ] Start -->
+            </div>
+            <!-- [ Layout container ] End -->
+        </div>
+        <!-- Overlay -->
+        <div class="layout-overlay layout-sidenav-toggle"></div>
+    </div>
+    <!-- [ Layout wrapper] End -->
+
+    <!-- Core scripts -->
+    <script src="assets/js/pace.js"></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/libs/popper/popper.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/sidenav.js"></script>
+    <script src="assets/js/layout-helpers.js"></script>
+    <script src="assets/js/material-ripple.js"></script>
+
+    <!-- Libs -->
+    <script src="assets/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/libs/eve/eve.js"></script>
+    <script src="assets/libs/flot/flot.js"></script>
+    <script src="assets/libs/flot/curvedLines.js"></script>
+    <script src="assets/libs/chart-am4/core.js"></script>
+    <script src="assets/libs/chart-am4/charts.js"></script>
+    <script src="assets/libs/chart-am4/animated.js"></script>
+
+    <!-- Demo -->
+    <script src="assets/js/demo.js"></script>
+    <script src="assets/js/analytics.js"></script>
+    <script src="assets/js/pages/dashboards_index.js"></script>
+
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/dataviz.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+    <script>
+        am4core.ready(function() {
+            // Themes begin
+            am4core.useTheme(am4themes_dataviz);
+            am4core.useTheme(am4themes_animated);
+            // Themes end
+
+            // Create chart instance
+            var chart = am4core.create("chartdiv", am4charts.PieChart);
+
+            // Add data
+            chart.data = [{
+                    country: "Australia",
+                    litres: 139.9
+                },
+                {
+                    country: "Austria",
+                    litres: 128.3
+                },
+                {
+                    country: "UK",
+                    litres: 99
+                },
+                {
+                    country: "Belgium",
+                    litres: 60
+                }, ,
+                {
+                    country: "Belgium",
+                    litres: 20
+                },
+                {
+                    country: "The Netherlands",
+                    litres: 50
+                }
+            ];
+
+            // Set inner radius
+            chart.innerRadius = am4core.percent(50);
+
+            // Add and configure Series
+            var pieSeries = chart.series.push(new am4charts.PieSeries());
+            pieSeries.dataFields.value = "litres";
+            pieSeries.dataFields.category = "country";
+            pieSeries.slices.template.stroke = am4core.color("#fff");
+            pieSeries.slices.template.strokeWidth = 2;
+            pieSeries.slices.template.strokeOpacity = 1;
+
+            // This creates initial animation
+            pieSeries.hiddenState.properties.opacity = 1;
+            pieSeries.hiddenState.properties.endAngle = -90;
+            pieSeries.hiddenState.properties.startAngle = -90;
+
+
+
+            var chart = am4core.create("chartdiv2", am4charts.XYChart);
+            chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
+
+            chart.data = [{
+
+
+                "date": "2018-01-24",
+                "steps": 9987
+            }, {
+                "date": "2018-01-25",
+                "steps": 16457
+            }, {
+                "date": "2018-01-26",
+                "steps": 7878
+            }, {
+                "date": "2018-01-27",
+                "steps": 6845
+            }, {
+                "date": "2018-01-28",
+                "steps": 4659
+            }, {
+                "date": "2018-01-29",
+                "steps": 7892
+            }, {
+                "date": "2018-01-30",
+                "steps": 7362
+            }, {
+                "date": "2018-01-31",
+                "steps": 3268
+            }];
+
+            chart.dateFormatter.inputDateFormat = "YYYY-MM-dd";
+            chart.zoomOutButton.disabled = true;
+
+            var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
+            dateAxis.renderer.grid.template.strokeOpacity = 0;
+            dateAxis.renderer.minGridDistance = 10;
+            dateAxis.dateFormats.setKey("day", "d");
+            dateAxis.tooltip.hiddenState.properties.opacity = 1;
+            dateAxis.tooltip.hiddenState.properties.visible = true;
+
+
+            dateAxis.tooltip.adapter.add("x", function(x, target) {
+                return am4core.utils.spritePointToSvg({
+                    x: chart.plotContainer.pixelX,
+                    y: 0
+                }, chart.plotContainer).x + chart.plotContainer.pixelWidth / 2;
+            })
+
+            var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+            valueAxis.renderer.inside = true;
+            valueAxis.renderer.labels.template.fillOpacity = 0.3;
+            valueAxis.renderer.grid.template.strokeOpacity = 0;
+            valueAxis.min = 0;
+            valueAxis.cursorTooltipEnabled = false;
+
+            // goal guides
+            var axisRange = valueAxis.axisRanges.create();
+            axisRange.value = 6000;
+            axisRange.grid.strokeOpacity = 0.1;
+            axisRange.label.text = "Goal";
+            axisRange.label.align = "right";
+            axisRange.label.verticalCenter = "bottom";
+            axisRange.label.fillOpacity = 0.8;
+
+            valueAxis.renderer.gridContainer.zIndex = 1;
+
+            var axisRange2 = valueAxis.axisRanges.create();
+            axisRange2.value = 12000;
+            axisRange2.grid.strokeOpacity = 0.1;
+            axisRange2.label.text = "2x goal";
+            axisRange2.label.align = "right";
+            axisRange2.label.verticalCenter = "bottom";
+            axisRange2.label.fillOpacity = 0.8;
+
+            var series = chart.series.push(new am4charts.ColumnSeries);
+            series.dataFields.valueY = "steps";
+            series.dataFields.dateX = "date";
+            series.tooltipText = "{valueY.value}";
+            series.tooltip.pointerOrientation = "vertical";
+            series.tooltip.hiddenState.properties.opacity = 1;
+            series.tooltip.hiddenState.properties.visible = true;
+            series.tooltip.adapter.add("x", function(x, target) {
+                return am4core.utils.spritePointToSvg({
+                    x: chart.plotContainer.pixelX,
+                    y: 0
+                }, chart.plotContainer).x + chart.plotContainer.pixelWidth / 2;
+            })
+
+            // Create chart instance
+            var chart = am4core.create("chartdiv3", am4charts.RadarChart);
+
+            // Add data
+            chart.data = [{
+                "category": "일반재구성",
+                "value": 80,
+                "full": 100
+            }, {
+                "category": "확장자 위변조",
+                "value": 35,
+                "full": 100
+            }, {
+                "category": "악성의심요소",
+                "value": 55,
+                "full": 100
+            }, {
+                "category": "미지정 확장자",
+                "value": 92,
+                "full": 100
+            }, {
+                "category": "기타",
+                "value": 8,
+                "full": 100
+            }];
+
+            // Make chart not full circle
+            chart.startAngle = -90;
+            chart.endAngle = 180;
+            chart.innerRadius = am4core.percent(20);
+
+            // Set number format
+            chart.numberFormatter.numberFormat = "#.#'%'";
+
+            // Create axes
+            var categoryAxis = chart.yAxes.push(new am4charts.CategoryAxis());
+            categoryAxis.dataFields.category = "category";
+            categoryAxis.renderer.grid.template.location = 0;
+            categoryAxis.renderer.grid.template.strokeOpacity = 0;
+            categoryAxis.renderer.labels.template.horizontalCenter = "right";
+            categoryAxis.renderer.labels.template.fontWeight = 500;
+            categoryAxis.renderer.labels.template.adapter.add("fill", function(fill, target) {
+                return (target.dataItem.index >= 0) ? chart.colors.getIndex(target.dataItem.index) : fill;
+            });
+            categoryAxis.renderer.minGridDistance = 10;
+
+            var valueAxis = chart.xAxes.push(new am4charts.ValueAxis());
+            valueAxis.renderer.grid.template.strokeOpacity = 0;
+            valueAxis.min = 0;
+            valueAxis.max = 100;
+            valueAxis.strictMinMax = true;
+
+            // Create series
+            var series1 = chart.series.push(new am4charts.RadarColumnSeries());
+            series1.dataFields.valueX = "full";
+            series1.dataFields.categoryY = "category";
+            series1.clustered = false;
+            series1.columns.template.fill = new am4core.InterfaceColorSet().getFor("alternativeBackground");
+            series1.columns.template.fillOpacity = 0.08;
+            series1.columns.template.cornerRadiusTopLeft = 20;
+            series1.columns.template.strokeWidth = 0;
+            series1.columns.template.radarColumn.cornerRadius = 20;
+
+            var series2 = chart.series.push(new am4charts.RadarColumnSeries());
+            series2.dataFields.valueX = "value";
+            series2.dataFields.categoryY = "category";
+            series2.clustered = false;
+            series2.columns.template.strokeWidth = 0;
+            series2.columns.template.tooltipText = "{category}: [bold]{value}[/]";
+            series2.columns.template.radarColumn.cornerRadius = 20;
+
+            series2.columns.template.adapter.add("fill", function(fill, target) {
+                return chart.colors.getIndex(target.dataItem.index);
+            });
+
+            // Add cursor
+            chart.cursor = new am4charts.RadarCursor();
+
+        });
+
+    </script>
+</body>
+
+</html>
